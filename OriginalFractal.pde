@@ -6,12 +6,10 @@ void setup(){
 void draw(){
 	background(255);
 	stroke(0);
-	point(width/2, height/2);	
+	strokeWeight(5);
+	point(width/2, height/2);
+	line(0,height/2,width,height/2);
+	line(2,0,2,height);
+	line(width-3,0,width-3,height);
 }
 
-void createMaze()
-{
-	stroke(255*(int)(Math.random()*2)); // line is always randomly white or black
-	if( count  == 0)
-		//line(x1, y1, x2, y2);
-}

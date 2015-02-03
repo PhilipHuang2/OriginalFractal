@@ -20,10 +20,15 @@ public void setup(){
 
 }
 public void draw(){
-	background(255*(int)(Math.random()*2));
+	background(255);
 	stroke(0);
-	point(width/2, height/2);	
+	strokeWeight(5);
+	point(width/2, height/2);
+	line(0,height/2,width,height/2);
+	line(2,0,2,height);
+	line(width-3,0,width-3,height);
 }
+
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "OriginalFractal" };
     if (passedArgs != null) {
