@@ -37,10 +37,11 @@ public void draw(){
 public void loopT(int centerX, int centerY, int tall)
 {
 	//each t is an square of ()
-	if(tall <= 50)
+	if(tall <= 30)
 	{
-		line(centerX, centerY-15, centerX, centerY+15);
-		line(centerX-10, centerY-10, centerX+10, centerY-10);
+		triangle(centerX-5, centerY -15, centerX +20, centerY-15, centerX-5, centerY + 15);
+		//line(centerX, centerY-15, centerX, centerY+15);
+		//line(centerX-10, centerY-10, centerX+10, centerY-10);
 
 	}
 	else 
